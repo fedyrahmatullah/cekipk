@@ -22,14 +22,14 @@
       <div class="col-lg-5 col-md-12 footer-info">
         <a href="index.html" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="">
-          <span>FlexStart</span>
+          <span>CekIPK</span>
         </a>
         <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
         <div class="social-links mt-3">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/fedyrahmatullah/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -73,7 +73,7 @@
 
 <div class="container">
   <div class="copyright">
-    &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+    &copy; Copyright <strong><span>Fedy Rahmatullah</span></strong>. All Rights Reserved
   </div>
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->

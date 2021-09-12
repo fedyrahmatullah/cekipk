@@ -135,15 +135,15 @@ function validasiAngka(){
           </div>
           <button type="submit" id="submit" class="btn btn-primary" name="submit" style="float: right;">Submit</button>
           <?php if ($btnReset) {
-          echo "<a style='margin: 0 auto; width:30%' href=\"hitung.php\" class=\"btn-reset\">Reset</a>";
+          echo "<a style='margin: 0 auto; float' href=\"hitung.php\" class=\"btn btn-primary\">Reset</a>";
           } ?>
       <!-- </div> -->
       <!-- </div> -->
     </form>
-</div>
+ </div>
 
 	<div class="clear"></div>
-	</div>
+
 	<?php if (isset($_POST["submit"])) : ?>
 		<?php validasiAngka(); ?>
 		<div class="container">
@@ -162,19 +162,19 @@ function validasiAngka(){
 					<div class="form-group">
 						<label for="mutu<?= $i; ?>">Nilai Mutu per Semester: </label><br>
 						<input min="1" type="number_float" id="mutu<?= $i; ?>" name="mutu[]" required="" placeholder="Jumlah Nilai Mutu Semester <?= $i; ?>">
-					</div>
-				</div>
-			<?php endfor ?>
+			  </div>
+		      </div>
+	      <?php endfor ?>
 		<div class="clear"></div>
-	<div class="clear"></div>
-  <div class="clear"></div>
-	<div>
+	  <div class="clear"></div>
+    <div class="clear"></div>
+	  <div>
 			<input type="text" id="jml_semester" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
 			<button type="submit" style="margin: 0 auto; width:30%" class="btn btn-primary"  id="enter" name="enter">Submit</button>
       </div>
-	</form>
+  	</form>
 		<div class="clear"></div>
-	</div>
+  	</div>
 	<?php endif ?>
 		<div class="clear"></div>
 

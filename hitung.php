@@ -119,55 +119,29 @@ function validasiAngka(){
 <body>
 	<div class="clear"></div>
 	<div class="clear"></div>
-	<div class="navbar">
 <!-- TEST COBA -->
-
-<div id="footer" class="footer">
-<div class="footer-newsletter" id="footer">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
-        <h4>Our Newsletter</h4>
-        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-      </div>
-      <div class="col-lg-6">
-        <form action="" method="post">
-          <input type="email" name="email"><input type="submit" value="Subscribe">
-        </form>
-        <form action="" method="post" id="jml_semester">
-          <label for="j_semester" class="label2">Jumlah Semester: </label>
-          <?php if (isset($_POST["submit"])) : ?>
-          <?php $btnReset = true; ?>
-          <input min="1" max="100" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-          <?php else : ?>
-          <input min="1" max="100" placeholder="Masukan angka saja" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-          <?php endif ?>
-          <button type="submit" id="submit" name="submit">Submit</button>
+  <div style="margin: 0 auto; width:30%">
+    <form action="" method="post" id="jml_semester">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-md-10 col-sm-10 col-xs-10"> -->
+          <div class="form-group">
+              <label for="j_semester">Jumlah Semester: </label>
+              <?php if (isset($_POST["submit"])) : ?>
+              <?php $btnReset = true; ?>
+              <input min="1" max="100" class="form-control" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+              <?php else : ?>
+              <input min="1" max="100" class="form-control" placeholder="Masukan angka saja" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+              <?php endif ?>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary" name="submit" style="float: right;">Submit</button>
           <?php if ($btnReset) {
-            echo "<a href=\"hitung.php\" class=\"btn-reset\">Reset</a>";
+          echo "<a style='margin: 0 auto; width:30%' href=\"hitung.php\" class=\"btn-reset\">Reset</a>";
           } ?>
-        </form>
-      </div>
-    </div>
-  </div>
+      <!-- </div> -->
+      <!-- </div> -->
+    </form>
 </div>
 
-</div>
-<!-- TES COBA END -->
-
-	<form action="" method="post" id="jml_semester">
-		<label for="j_semester" class="label2">Jumlah Semester: </label>
-		<?php if (isset($_POST["submit"])) : ?>
-		<?php $btnReset = true; ?>
-		<input min="1" max="100" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-		<?php else : ?>
-		<input min="1" max="100" placeholder="Masukan angka saja" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-		<?php endif ?>
-		<button type="submit" id="submit" name="submit">Submit</button>
-		<?php if ($btnReset) {
-			echo "<a href=\"hitung.php\" class=\"btn-reset\">Reset</a>";
-		} ?>
-	</form>
 	<div class="clear"></div>
 	</div>
 	<?php if (isset($_POST["submit"])) : ?>
@@ -192,13 +166,13 @@ function validasiAngka(){
 				</div>
 			<?php endfor ?>
 		<div class="clear"></div>
-	</div>
 	<div class="clear"></div>
-	<div class="foother">
-
+  <div class="clear"></div>
+	<div>
 			<input type="text" id="jml_semester" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
-			<button type="submit" id="enter" name="enter">Submit</button>
-		</form>
+			<button type="submit" style="margin: 0 auto; width:30%" class="btn btn-primary"  id="enter" name="enter">Submit</button>
+      </div>
+	</form>
 		<div class="clear"></div>
 	</div>
 	<?php endif ?>
@@ -208,7 +182,6 @@ function validasiAngka(){
 </html>
 
       <!-- End Hitung -->
-
 
       </div>
     </section>

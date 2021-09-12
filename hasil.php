@@ -83,10 +83,9 @@
 	<div class="clear"></div>
 	<div class="navbar">
 	<form action="index.php" method="post" id="jml_semester">
-		<label for="j_semester" class="label">Jumlah Semester: </label>
+		<label for="j_semester" class="label2">Jumlah Semester: </label>
 		<input min="1" max="100" value="<?= $baris; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-		<button type="submit" id="submit" name="submit">Submit</button>
-		<a href="index.php" class="btn-reset">Reset</a>
+
 	</form>
 	<div class="clear"></div>
 	</div>
@@ -100,12 +99,7 @@
 			<td colspan="1">SKS</td>
 			<td colspan="1">IP per Semester</td>
 		</tr>
-		<!-- <tr class="title centers">
-			<td>1 Hari</td>
-			<td><?= $_POST["pemakaian"]; ?> Hari</td>
-			<td>1 Hari</td>
-			<td><?= $_POST["pemakaian"]; ?> Hari</td>
-		</tr> -->
+
 	<?php for ($i=0; $i < $baris; $i++) : $nomor++;?>
 			<?php if ($nomor%2 == 0) :?>
 			<tr id="genap">
@@ -128,12 +122,13 @@
 	</table>
 	</div>
 	<div class="clear"></div>
-
+	<a href="hitung.php" style="float:right;" class="btn btn-primary">Reset</a>
 </body>
 </html>
 
       <!-- End Hitung -->
-
+<!-- chart -->                             
+<!-- end chart  -->
 
       </div>
     </section>

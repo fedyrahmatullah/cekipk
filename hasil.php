@@ -67,6 +67,7 @@
 	$totalmutu = 0;
 	$totalsks = 0;
 
+
 	// $output = number_format($totalipk, 2, '.', '');
 	// algoritm
 	for ($i=0; $i < $baris; $i++) { 
@@ -82,6 +83,7 @@
 <body>
 	<div class="clear"></div>
 	<div class="navbar">
+  
 	<form action="index.php" method="post" id="jml_semester">
 		<label for="j_semester" class="label2">Jumlah Semester: </label>
 		<input min="1" max="100" value="<?= $baris; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">

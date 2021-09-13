@@ -62,34 +62,34 @@
       <!-- Hitung   -->
       <?php
       $btnReset = false;
-$total = [
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","","",
-	"","","","","","","","","",""
-	];
-  $header = "
+// $total = [
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","","",
+// 	"","","","","","","","","",""
+// 	];
+//   $header = "
 
-  <meta charset=\"utf-8\">
-  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-  <meta property=\"og:url\"                content=\"\" />
-  <meta property=\"og:type\"               content=\"article\" />
-  <meta property=\"og:title\"              content=\"Aplikasi perhitungan IPK\" />
-  <meta property=\"og:description\"        content=\"Aplikasi perhitungan IPK Mahasiswa Setiap Semester\" />
-  <meta property=\"og:image\"              content=\"assets\iconlogo-x.jpg\" />
+//   <meta charset=\"utf-8\">
+//   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+//   <meta property=\"og:url\"                content=\"\" />
+//   <meta property=\"og:type\"               content=\"article\" />
+//   <meta property=\"og:title\"              content=\"Aplikasi perhitungan IPK\" />
+//   <meta property=\"og:description\"        content=\"Aplikasi perhitungan IPK Mahasiswa Setiap Semester\" />
+//   <meta property=\"og:image\"              content=\"assets\iconlogo-x.jpg\" />
   
-  <link rel=\"manifest\" href=\"assets/icon/manifest.json\">
-  <meta name=\"msapplication-TileColor\" content=\"#ffffff\">
-  <meta name=\"msapplication-TileImage\" content=\"assets/icon/ms-icon-144x144.png\">
-  <meta name=\"theme-color\" content=\"#ffffff\">
-  <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/style1.css\" />
-  ";
+//   <link rel=\"manifest\" href=\"assets/icon/manifest.json\">
+//   <meta name=\"msapplication-TileColor\" content=\"#ffffff\">
+//   <meta name=\"msapplication-TileImage\" content=\"assets/icon/ms-icon-144x144.png\">
+//   <meta name=\"theme-color\" content=\"#ffffff\">
+//   <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/style1.css\" />
+//   ";
 
     ?>
 <?php
@@ -120,7 +120,7 @@ function validasiAngka(){
 	<div class="clear"></div>
 	<div class="clear"></div>
 <!-- TEST COBA -->
-  <div style="margin: 0 auto; width:30%">
+  <div style="margin: 0 auto; width:55%">
     <form action="" method="post" id="jml_semester">
       <!-- <div class="row"> -->
         <!-- <div class="col-md-10 col-sm-10 col-xs-10"> -->
@@ -145,10 +145,10 @@ function validasiAngka(){
 
 	<div class="clear"></div>
 
-
+<!-- <div style="margin: 0 auto; width:55%"> -->
 <?php if (isset($_POST["submit"])) : ?>
       <?php validasiAngka(); ?>
-      <div class="container">
+      <div class="container" style="margin-left:7%">
       <form action="hasil.php" method="post">
         <?php for ($i=1; $i<= $_POST["j_semester"]; $i++) :?>
           <div class="inputan">
@@ -163,23 +163,25 @@ function validasiAngka(){
             </div>
             <div class="form-group">
             <label for="mutu<?= $i; ?>">Nilai Mutu per Semester: </label><br>
-            <input min="1" type="number_float" id="mutu<?= $i; ?>" name="mutu[]" required="" placeholder="Jumlah Nilai Mutu Semester <?= $i; ?>">
+            <input min="1" type="number_float" id="mutu<?= $i; ?>" name="mutu[]" required="" placeholder="Total Nilai Mutu Semester <?= $i; ?>">
             </div>
           </div>
         <?php endfor ?>
         
         <div class="clear"></div>
         <br>
-      
+        <!-- Nama -->
 
         <div>
-        <input type="text" id="jml_semester" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
+        <input type="text" id="nama" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
         <button type="submit" style="margin: 0 auto; width:30%" class="btn btn-primary"  id="enter" name="enter">Submit</button>
         </div>
       </form>
         <div class="clear"></div>
       </div>
 <?php endif ?>
+        <!-- </div>  -->
+        <!-- end div style -->
 <div class="clear"></div>
 
 </body>

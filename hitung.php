@@ -125,7 +125,7 @@ function validasiAngka(){
       <!-- <div class="row"> -->
         <!-- <div class="col-md-10 col-sm-10 col-xs-10"> -->
           <div class="form-group">
-              <label for="j_semester">Jumlah Semester: </label>
+              <label for="j_semester"><strong>Jumlah Semester: </strong></label>
               <?php if (isset($_POST["submit"])) : ?>
               <?php $btnReset = true; ?>
               <input min="1" max="100" class="form-control" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
@@ -141,42 +141,46 @@ function validasiAngka(){
       <!-- </div> -->
     </form>
  </div>
+ <br>
 
 	<div class="clear"></div>
 
-	<?php if (isset($_POST["submit"])) : ?>
-		<?php validasiAngka(); ?>
-		<div class="container">
-		<form action="hasil.php" method="post">
-			<?php for ($i=1; $i<= $_POST["j_semester"]; $i++) :?>
-				<div class="inputan">
-					<h1>Semester <?= $i; ?></h1>
-					<!-- <div class="form-group">
-						<label for="nama<?= $i; ?>">Semester Ke-: </label><br>
-						<input type="text" id="nama<?= $i; ?>" name="nama[]" required="" placeholder="Semester ke-">
-					</div> -->
-					<div class="form-group">
-						<label for="sks<?= $i; ?>">Jumlah SKS: </label><br>
-						<input min="1" type="number" id="sks<?= $i; ?>" name="sks[]" required="" placeholder="Jumlah SKS Semester <?= $i; ?>">
-					</div>
-					<div class="form-group">
-						<label for="mutu<?= $i; ?>">Nilai Mutu per Semester: </label><br>
-						<input min="1" type="number_float" id="mutu<?= $i; ?>" name="mutu[]" required="" placeholder="Jumlah Nilai Mutu Semester <?= $i; ?>">
-			  </div>
-		      </div>
-	      <?php endfor ?>
-		<div class="clear"></div>
-	  <div class="clear"></div>
-    <div class="clear"></div>
-	  <div>
-			<input type="text" id="jml_semester" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
-			<button type="submit" style="margin: 0 auto; width:30%" class="btn btn-primary"  id="enter" name="enter">Submit</button>
+
+<?php if (isset($_POST["submit"])) : ?>
+      <?php validasiAngka(); ?>
+      <div class="container">
+      <form action="hasil.php" method="post">
+        <?php for ($i=1; $i<= $_POST["j_semester"]; $i++) :?>
+          <div class="inputan">
+            <h1><strong>Semester <?= $i; ?></strong></h1>
+                <!-- <div class="form-group">
+                  <label for="nama<?= $i; ?>">Semester Ke-: </label><br>
+                  <input type="text" id="nama<?= $i; ?>" name="nama[]" required="" placeholder="Semester ke-">
+                </div> -->
+            <div class="form-group">
+            <label for="sks<?= $i; ?>">Jumlah SKS: </label><br>
+            <input min="1" type="number" id="sks<?= $i; ?>" name="sks[]" required="" placeholder="Jumlah SKS Semester <?= $i; ?>">
+            </div>
+            <div class="form-group">
+            <label for="mutu<?= $i; ?>">Nilai Mutu per Semester: </label><br>
+            <input min="1" type="number_float" id="mutu<?= $i; ?>" name="mutu[]" required="" placeholder="Jumlah Nilai Mutu Semester <?= $i; ?>">
+            </div>
+          </div>
+        <?php endfor ?>
+        
+        <div class="clear"></div>
+        <br>
+      
+
+        <div>
+        <input type="text" id="jml_semester" name="jml_semester" value="<?= $_POST["j_semester"]; ?>" hidden="hidden">
+        <button type="submit" style="margin: 0 auto; width:30%" class="btn btn-primary"  id="enter" name="enter">Submit</button>
+        </div>
+      </form>
+        <div class="clear"></div>
       </div>
-  	</form>
-		<div class="clear"></div>
-  	</div>
-	<?php endif ?>
-		<div class="clear"></div>
+<?php endif ?>
+<div class="clear"></div>
 
 </body>
 </html>

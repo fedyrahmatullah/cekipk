@@ -24,7 +24,7 @@
           <img src="assets/img/favicon.png" alt="">
           <span>CekIPK</span>
         </a>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+        <p>CekIPK merupakan website untuk menghitung IPK mahasiswa berdasarkan jumlah nilai mutu dan SKS tiap semester.</p>
         <div class="social-links mt-3">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -36,8 +36,8 @@
       <div class="col-lg-2 col-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.php">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
@@ -80,7 +80,7 @@
     <!-- You can delete the links only if you purchased the pro version. -->
     <!-- Licensing information: https://bootstrapmade.com/license/ -->
     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
   </div>
 </div>
 </footer>

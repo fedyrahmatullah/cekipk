@@ -26,9 +26,9 @@
         </a>
         <p>CekIPK merupakan website untuk menghitung IPK mahasiswa berdasarkan jumlah nilai mutu dan SKS tiap semester.</p>
         <div class="social-links mt-3">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+          <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+          <a href="https://www.instagram.com/fedyr_" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/fedyrahmatullah/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
         </div>
       </div>

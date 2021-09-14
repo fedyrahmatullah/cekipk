@@ -188,11 +188,19 @@
         </div> -->
         <div class="col-lg-12 col-md-12">
             <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p class="text-center">Happy Clients</p>
-              </div>
+              <!-- <div class="mx-auto"> -->
+              &emsp;&emsp;&emsp;&emsp;<i class="bi bi-emoji-smile"></i>
+                <div>
+                <p>
+            <?php 
+            include ("counter.php");
+            echo "<p style='color:#0b198f; font-weight:600; display:block; font-size:36px; font:sans-serif'> $kunjungan[0] </p>";
+            ?>
+            </p>
+                  <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
+                  <p >Visitors</p>
+                </div>
+              <!-- </div> -->
             </div>
           </div>
       </div>

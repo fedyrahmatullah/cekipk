@@ -605,7 +605,7 @@
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    buka browser yang ada diperangkat anda kemudian akses bit.ly/cekipk .
+                    buka browser yang ada diperangkat anda kemudian akses bit.ly/cek-ipk .
                   </div>
                 </div>
               </div>

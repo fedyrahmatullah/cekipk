@@ -91,7 +91,7 @@
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/khs.png" class="img-fluid" alt="">
+            <img src="assets/img/khs-small.png" class="img-fluid" alt="">
           </div>
 
         </div>

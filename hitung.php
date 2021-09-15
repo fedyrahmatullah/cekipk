@@ -103,10 +103,10 @@ function validasiAngka(){
 			document.location.href='index.php';
 		</script>
 		";
-	}elseif ($_POST["j_semester"] > 100 || $_POST["j_semester"] < 1 ) {
+	}elseif ($_POST["j_semester"] > 14 || $_POST["j_semester"] < 1 ) {
 		echo "
 		<script>
-			alert('Data melebihi kapasitas maksimal, Hanya menerima inputan 1 - 100');
+			alert('Data melebihi kapasitas maksimal, Hanya menerima inputan 1 - 14');
 			document.location.href='index.php';
 		</script>
 		";		
@@ -128,9 +128,9 @@ function validasiAngka(){
               <label for="j_semester"><strong>Jumlah Semester: </strong></label>
               <?php if (isset($_POST["submit"])) : ?>
               <?php $btnReset = true; ?>
-              <input min="1" max="100" class="form-control" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+              <input min="1" max="14" class="form-control" value="<?= $_POST["j_semester"]; ?>" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
               <?php else : ?>
-              <input min="1" max="100" class="form-control" placeholder="Masukan angka saja" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+              <input min="1" max="14" class="form-control" placeholder="Masukan angka saja" type="number" id="j_semester" name="j_semester" required="" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
               <?php endif ?>
           </div>
           <button type="submit" id="submit" class="btn btn-primary" name="submit" style="float: right;">Submit</button>

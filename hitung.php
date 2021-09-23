@@ -182,6 +182,7 @@ function validasiAngka(){
 <?php endif ?>
         <!-- </div>  -->
         <!-- end div style -->
+
 <div class="clear"></div>
 
 </body>
@@ -193,7 +194,7 @@ function validasiAngka(){
     </section>
 
   </main><!-- End #main -->
-
+  <font face="Microsoft Sans Serif" size=1>*Catatan: Apabila nilai mutu yang akan diinputkan berupa bil. desimal, gunakan titik ("."), bukan koma(",") Contoh: 71.5</font><br/>
 <!-- ======= Footer ======= -->
 <?php include'footer.php';?>
 <!-- End Footer -->

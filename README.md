@@ -4,7 +4,7 @@
   <b><h1 align="center">Website CekIPK</h1></b>
 </p>
 <p align="center">
-    <b><align="center">Digital Image Processing System Using Matlab</b>
+    <b><align="center">Website Penghitung Indeks Prestasi Kumulatif Mahasiswa</b>
 </p>
 
 <br />

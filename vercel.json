@@ -7,6 +7,10 @@
     "routes": [{
         "src": "/(.*)",
         "dest": "/api/index.php"
-    }]
+    },
+    { "src": "assets/js/main.js", "dest": "assets/js/main.js" },
+    { "src": "assets/css/style.css", "dest": "assets/css/style.css" }
+
+]
 
 }

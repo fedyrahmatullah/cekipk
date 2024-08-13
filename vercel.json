@@ -50,10 +50,6 @@
         "dest": "/assets/img/$1"
       },
       {
-        "src": "/assets/vendor/(.*)",
-        "dest": "/assets/vendor/$1"
-      },
-      {
         "src": "/(.*)",
         "dest": "/api/index.php"
       }

@@ -22,12 +22,20 @@
         "dest": "/assets/img/$1"
       },
       {
+        "src": "/assets/vendor/(.*)",
+        "dest": "/assets/vendor/$1"
+      },
+      {
         "src": "/assets/img/(.*).jpg",
         "dest": "/assets/img/$1"
       },
       {
         "src": "/assets/img/(.*).jpeg",
         "dest": "/assets/img/$1"
+      },
+      {
+        "src": "/assets/img/blog/(.*).png",
+        "dest": "/assets/img/blog/$1"
       },
       {
         "src": "/(.*)",

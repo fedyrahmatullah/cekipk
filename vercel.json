@@ -34,10 +34,6 @@
         "dest": "/assets/img/$1"
       },
       {
-        "src": "/assets/img/blog/(.*).png",
-        "dest": "/assets/img/blog/$1"
-      },
-      {
         "src": "/(.*)",
         "dest": "/api/index.php"
       }

@@ -14,19 +14,19 @@
         "dest": "/assets/css/$1"
       },
       {
-        "src": "/js/(.*).js",
+        "src": "/assets/js/(.*).js",
         "dest": "/assets/js/$1"
       },
       {
-        "src": "/img/(.*).png",
+        "src": "/assets/img/(.*).png",
         "dest": "/assets/img/$1"
       },
       {
-        "src": "/img/(.*).jpg",
+        "src": "/assets/img/(.*).jpg",
         "dest": "/assets/img/$1"
       },
       {
-        "src": "/img/(.*).jpeg",
+        "src": "/assets/img/(.*).jpeg",
         "dest": "/assets/img/$1"
       },
       {

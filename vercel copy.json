@@ -1,0 +1,65 @@
+{
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [
+      {
+        "src": "/api/index.php",
+        "dest": "/api/index.php"
+      },
+      {
+        "src": "/api/hasil.php",
+        "dest": "/api/hasil.php"
+      },
+      {
+        "src": "/index.php",
+        "dest": "/api/index.php"
+      },
+      {
+        "src": "/api/hitung.php",
+        "dest": "/api/hitung.php"
+      },
+      {
+        "src": "/hasil.php",
+        "dest": "/api/hasil.php"
+      },
+      {
+        "src": "/hitung.php",
+        "dest": "/api/hitung.php"
+      },
+      {
+        "src": "/assets/css/(.*).css",
+        "dest": "/assets/css/$1"
+      },
+      {
+        "src": "/assets/js/(.*).js",
+        "dest": "/assets/js/$1"
+      },
+      {
+        "src": "/assets/img/(.*).png",
+        "dest": "/assets/img/$1"
+      },
+      {
+        "src": "/counter.txt",
+        "dest": "/counter.txt"
+      },
+      {
+        "src": "/assets/img/(.*).jpg",
+        "dest": "/assets/img/$1"
+      },
+      {
+        "src": "/assets/img/(.*).jpeg",
+        "dest": "/assets/img/$1"
+      },
+      {
+        "src": "/assets/vendor/(.*)",
+        "dest": "/assets/vendor/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
+    ]
+  }

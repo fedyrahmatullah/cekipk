@@ -17,8 +17,16 @@
     { "src": "/assets/css/(.*)", "dest": "/assets/css/$1" },
     { "src": "/assets/js/(.*)", "dest": "/assets/js/$1" },
     { "src": "/assets/img/(.*)", "dest": "/assets/img/$1" },
+    { "src": "/assets/img/blog/(.*)", "dest": "/assets/img/blog/$1" },
+    { "src": "/assets/img/clients/(.*)", "dest": "/assets/img/clients/$1" },
+    { "src": "/assets/img/portfolio/(.*)", "dest": "/assets/img/portfolio/$1" },
+    { "src": "/assets/img/team/(.*)", "dest": "/assets/img/team/$1" },
+    { "src": "/assets/img/testimonials/(.*)", "dest": "/assets/img/testmonials/$1" },
     { "src": "/assets/vendor/(.*)", "dest": "/assets/vendor/$1" },
-
+    { "src": "/assets/vendor/aos/(.*)", "dest": "/assets/vendor/aos/$1" },
+    { "src": "/assets/vendor/bootstrap/(.*)", "dest": "/assets/vendor/boostrap/$1" }, 
+    { "src": "/assets/vendor/bootstrap/css/(.*)", "dest": "/assets/vendor/boostrap/css/$1" }, 
+    { "src": "/assets/vendor/bootstrap/js/(.*)", "dest": "/assets/vendor/boostrap/js/$1" }, 
 
     { "src": "/assets/(.*).svg", "dest": "/assets/$1.svg" },
     { "src": "/assets/(.*).gif", "dest": "/assets/$1.gif" },
